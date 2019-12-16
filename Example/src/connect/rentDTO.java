@@ -20,12 +20,22 @@ public class rentDTO {
 	private String username;
 	private String usertel;
 	private String usermyun;
-	private int rentinfo;
+	private String rentinfo;
 	private String rentno;
 		
 	public rentDTO() {	}
 
 	
+	public String getRentinfo() {
+		return rentinfo;
+	}
+
+
+	public void setRentinfo(String rentinfo) {
+		this.rentinfo = rentinfo;
+	}
+
+
 	public String getCid() {
 		return cid;
 	}
@@ -74,17 +84,6 @@ public class rentDTO {
 	public void setUsermyun(String usermyun) {
 		this.usermyun = usermyun;
 	}
-
-
-	public int getRentinfo() {
-		return rentinfo;
-	}
-
-
-	public void setRentinfo(int rentinfo) {
-		this.rentinfo = rentinfo;
-	}
-
 
 	public String getRentno() {
 		return rentno;

@@ -180,4 +180,41 @@ public class rentDAO {
 		}
 		return result;
 	}
+	
+	public static rentDTO readcarrent (String rentno) {
+		rentDTO rent = new rentDTO();
+		Connection con = null;
+		PreparedStatement ps = null;
+		ResultSet rs = null;
+		
+		String sql = "select * from carrent where rentno=?";
+		
+		try {
+			con = DBCon.getCon();
+			ps = con.prepareStatement(sql);
+			ps.setString(1, rentno);
+			rs = ps.executeQuery();
+			if(rs.next()) {
+				rent.setRentno(rs.getString("rentno"));
+				rent.setUserid(rs.getString("userid"));
+				rent.setUsername(rs.getString("username"));
+				rent.setUsertel(rs.getString("usertel"));
+				rent.setUsermyun(rs.getString("usermyun"));
+				int rentinfo = Integer.parseInt(rs.getString("rentinfo"));
+				if (rentinfo == 1) {
+					rent.setRentinfo("가능");
+				} else {
+					rent.setRentinfo("불가능");
+				}
+			} else {
+				rent.setRentno(null);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			DBCon.close(con, ps, rs);
+		}
+		return rent;
+	}
+	
 }

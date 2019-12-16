@@ -11,7 +11,7 @@
 	</style>
 </head>
 <body>
-	<form action = "rservationSerch">
+	<form action = "reservationSerch">
 		<table>
 			<tr>
 				<th><h2>렌트 예약 확인</h2></th>
