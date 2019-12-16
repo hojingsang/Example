@@ -217,4 +217,22 @@ public class rentDAO {
 		return rent;
 	}
 	
+	public static int reservationdelete(String rentno) {
+		int result = -1;
+		
+		Connection con = null;
+		PreparedStatement ps = null;
+		
+		String sql = "delete from carrent where rentinfo = '1' and rentno = ?";
+		
+		try {
+			con = DBCon.getCon();
+			ps = con.prepareStatement(sql);
+			ps.setString(1, rentno);
+			result = ps.executeUpdate();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return result;
+	}
 }
