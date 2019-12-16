@@ -48,7 +48,7 @@
 			<li><a href='#'>렌트관리</a>
 				<ul>
 					<li><a href='reser.jsp'>렌트 예약</a></li>
-		 			<li><a href='#'>예약 확인</a></li>
+		 			<li><a href='rentmanage'>예약 확인</a></li>
 				</ul>
 			</li>
 			<li><a href ="Service">고객센터</a></li>
