@@ -11,7 +11,7 @@
 			width:300px;
 			left: 50%; top: 50%;
 			text-align:center;}
-		table { background-color : black; color:white;
+		table {
 			border : 2px solid gold; width : 400px;}
 	</style>
 	<script src = "개인정보.js"></script>

@@ -3,18 +3,31 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<style>
+	<style>
 		form {
 			position:absolute;
-			top:40%; left:45%;
+			top : 30%;
 		}
-	</style>
+		tr:nth-child(1) > th {
+			border-top-left-radius : 10px;
+			border-top-right-radius : 10px;
+		}
+		tr:last-child > td {
+			border-bottom-left-radius : 10px;
+			border-bottom-right-radius : 10px;
+		}
+		th,td { border: 1px solid #444444;
+		padding : 10px;  }
+		
+		input[type="submit"] { border-radius : 10px / 10px; }
+			
+		</style>
 </head>
 <body>
 	<form action = "reservationSerch">
 		<table>
 			<tr>
-				<th><h2>렌트 예약 확인</h2></th>
+				<th colspan="2"><h2>렌트 예약 확인</h2></th>
 			</tr>
 			<tr>
 				<td>예약번호</td>

@@ -4,7 +4,26 @@
 
 <% request.setCharacterEncoding("utf-8"); %>
 
-<table border="1" width="700" align="center">
+<style>
+		table {
+			position:absolute;
+			top : 30%;
+		}
+		tr:nth-child(1) > th {
+			border-top-left-radius : 10px;
+			border-top-right-radius : 10px;
+		}
+		tr:last-child > td {
+			border-bottom-left-radius : 10px;
+			border-bottom-right-radius : 10px;
+		}
+
+		th,td { border: 1px solid #444444;
+		padding : 10px;  }
+		
+		</style>
+
+<table width="700px" height="500px">
 	<tr>
 		<th colspan="4" height="100px"><h3>고객 센터</h3></th>
 	</tr>

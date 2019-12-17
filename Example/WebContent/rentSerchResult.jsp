@@ -5,13 +5,38 @@
 	<style>
 		form {
 			position:absolute;
-			top:40%; left:45%;
+			top : 30%;
 		}
+		tr:nth-child(1) > td {
+			border-top-left-radius : 10px;
+			border-top-right-radius : 10px;
+		}
+		tr:last-child > td {
+			border-bottom-left-radius : 10px;
+			border-bottom-right-radius : 10px;
+		}
+		td { border: 1px solid #444444;
+		padding : 10px;  }
+		
+		input[type="submit"] { border-radius : 10px / 10px; }
+		
 		</style>
+		
+		<script type="text/javascript">
+			function buttonClick() {
+				var result = confirm("예약을 취소 하시겠습니까? \n (예 : 취소하기 / 아니요 : 메인으로 )");
+				if (result) {
+					alert("예약을 취소 합니다.")
+				} else {
+					alert("메인으로 돌아갑니다.");
+					location.href = "index.jsp";
+				}
+			}
+		</script>
 </head>
 <body>
 	<form action = "reservationDelete" onsubmit="buttonClick()">
-		<table>
+		<table width="700px" height="500px">
 			<tr>
 				<td colspan="2" align="center"><h2>렌트 예약 정보</h2></td>
 			</tr>
@@ -41,7 +66,7 @@
 			</tr>
 			<tr>
 				<td colspan="2" align="center">
-					<input type ="submit" value = "취소하기" style="width:60px; height:20px;">
+					<input type ="submit" value = "취소하기" style="width:70px; height:20px;">
 				</td>
 			</tr>
 		</table>

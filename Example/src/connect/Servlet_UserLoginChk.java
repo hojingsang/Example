@@ -28,7 +28,7 @@ public class Servlet_UserLoginChk extends HttpServlet {
 			session.setAttribute("id", userid);
 			session.setAttribute("name", user.getName());
 
-			request.setAttribute("target", "main");
+			request.setAttribute("target", "Home");
 			RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
 			dispatcher.forward(request, response);
 			

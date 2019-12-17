@@ -21,7 +21,7 @@
 	}
     
     .wrap > #logo { margin-left:200px;}
-    .wrap > table { margin-top : 100px; }
+    /* .wrap > table { margin-top : 100px; } */
     
    	#quickMenu img { width:150px; height:150px; }
 		

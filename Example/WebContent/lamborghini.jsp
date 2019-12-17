@@ -23,7 +23,7 @@
 		<tr>
 			<td>
 			<figure>
-			<img src = "image/URUS.jpg">
+			<img src = "http://placehold.it/400x300"><!-- <img src = "image/URUS.jpg"> -->
 			<figcaption style="font-size:5px;">*본 사진과 실물이 다를수 있습니다.</figcaption>
 			</figure>
 			</td>

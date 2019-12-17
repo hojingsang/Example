@@ -6,13 +6,38 @@
 	<style>
 		form {
 			position:absolute;
-			top:40%; left:40%;
+			top : 30%;
 		}
-	</style>
+		tr:nth-child(1) > td {
+			border-top-left-radius : 10px;
+			border-top-right-radius : 10px;
+		}
+		tr:last-child > td {
+			border-bottom-left-radius : 10px;
+			border-bottom-right-radius : 10px;
+		}
+		td { border: 1px solid #444444;
+		padding : 10px;  }
+		
+		input[type="submit"] { border-radius : 10px / 10px; }
+		input[type="reset"] { border-radius : 10px / 10px; }
+		</style>
+		
+		<script type="text/javascript">
+			function resetChk() {
+				var result = confirm("이전 화면으로 되돌아 가시겠습니까? \n (예 : 되돌아가기 / 아니요 : 내용 지우기 )");
+				if (result) {
+					alert("이전 화면으로 되돌아갑니다.")
+					history.go(-1);
+				} else {
+					alert("내용을 지웁니다.");
+				}
+			}
+		</script>
 </head>
 <body>
 	<form action = "reservationinsert" name = "fm" onsubmit = "reservationCheck()">
-		<table width="500px">
+		<table width="700px" height="500px">
 			<tr>
 				<td colspan="2" align="center"><h3>렌트 예약하기</h3></td>
 			</tr>

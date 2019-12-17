@@ -162,8 +162,8 @@ public class rentDAO {
 		Connection con = null;
 		PreparedStatement ps = null;
 		
-		String sql = "insert into carrent (rentno,userid,username,usertel,usermyun) "
-				+ "values ((select max(rentno) + 1 from carrent),?,?,?,?)";
+		String sql = "insert into carrent (rentno,userid,username,usertel,usermyun,rentinfo) "
+				+ "values ((select max(rentno) + 1 from carrent),?,?,?,?,'1')";
 		
 		try {
 			con = DBCon.getCon();
