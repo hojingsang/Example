@@ -20,8 +20,8 @@
 			td { border: 1px solid #444444;
 			padding : 10px;  }
 			
-			input[type="submit"] { border-radius : 10px / 10px; }
-			input[type="button"] { border-radius : 10px / 10px; }
+			input[type="submit"] { border-radius : 10px / 10px; background-color:white; }
+			input[type="button"] { border-radius : 10px / 10px; background-color:white; }
 		</style>
 	<script>
 		function oncheck() {

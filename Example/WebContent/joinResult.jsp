@@ -17,7 +17,7 @@
 	
 	회원 정보가 정확 하지 않습니다.
 	<br>
-	<input type = "button" id="button" value = "돌아가기" onclick="button_click()" style="width:58px; height:22px;">
+	<input type = "button" id="button" value = "돌아가기" onclick="button_click()" style="width:58px; height:22px; background-color:white;">
 	<script type="text/javascript">
 		function button_click() {
 			history.go(-1);	
@@ -26,5 +26,5 @@
 <% } else { %>
 	<h4>정상적으로 회원가입이 되었습니다.</h4>
 	<br><br>
-	<input type = "button" value = "메인으로" onclick = "location.href='index.jsp'">
+	<input type = "button" value = "메인으로" onclick = "location.href='index.jsp'" style="width:60px; height:30px; background-color:white; ">
 <% } %>

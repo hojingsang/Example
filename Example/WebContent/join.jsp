@@ -14,20 +14,32 @@
 		}
 	</script>
 	<style>
-		html,body{
-		width:100%;
-		height:100%;
-		margin :auto;}
-		table {
-		position:absolute; left:50%; top:50%;
-		transform:translate(-50%,-50%); }
+			form {
+				position:absolute;
+				top : 30%;
+			}
+			tr:nth-child(1) > td {
+				border-top-left-radius : 10px;
+				border-top-right-radius : 10px;
+			}
+			tr:last-child > td {
+				border-bottom-left-radius : 10px;
+				border-bottom-right-radius : 10px;
+			}
+			td { border: 1px solid #444444;
+			padding : 10px;  }
 			
-		td { padding-top : 30px; background-color : LightGray; }
-	</style>
+			input[type="submit"] { border-radius : 10px / 10px; background-color:white; }
+			input[type="button"] { border-radius : 10px / 10px; background-color:white; }
+			input[type="reset"] { border-radius : 10px / 10px; background-color:white; }
+		</style>
 </head>
 <body>
 	<form action = "joinInsert" name="fm" method="post" onsubmit = "return oncheck()">
 		<table>
+			<tr>
+				<td colspan="2" align="center">회원가입</td>
+			</tr>
 			<tr>
 				<td>아이디</td>
 				<td>
